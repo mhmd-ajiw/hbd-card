@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8f3">
+  <meta name="description" content="Kartu ucapan ulang tahun digital yang manis, interaktif, dan bisa kamu personalisasi.">
+  <title>Hari Spesialmu — Kartu Ulang Tahun</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-palette="strawberry">
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Kembali ke awal">
+        <span class="brand-mark" aria-hidden="true">✿</span>
+        <span>little <strong>moments</strong></span>
+      </a>
+      <div class="topbar-right">
+        <span class="today-note"><span class="tiny-heart" aria-hidden="true">♥</span> dibuat dengan sepenuh hati</span>
+        <button class="palette-button" id="paletteButton" type="button" aria-label="Ganti palet warna" title="Ganti palet warna">
+          <span class="palette-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Ganti warna</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="birthday-card" aria-labelledby="mainTitle">
+        <div class="card-copy">
+          <div class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✦</span> HARI INI SPESIAL BANGET</div>
+          <p class="little-intro">Satu hari penuh senyum, peluk, dan harapan baik untukmu.</p>
+          <h1 id="mainTitle">Selamat Ulang Tahun,<br><span id="recipientName" class="name-highlight">Nadia</span><span class="title-sparkle" aria-hidden="true">✧</span></h1>
+          <p class="hero-description" id="introText">Semoga hal-hal baik selalu menemukan jalan pulang kepadamu. Tumbuh dengan bahagia, ya!</p>
+
+          <div class="action-row">
+            <button class="button button-primary" id="surpriseButton" type="button" aria-expanded="false" aria-controls="surpriseNote">
+              <span class="button-icon" aria-hidden="true">✉</span>
+              <span id="surpriseButtonLabel">Buka kejutan</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="button button-quiet" id="photoButton" type="button">
+              <span aria-hidden="true">＋</span> Ganti foto
+            </button>
+            <input id="photoInput" class="visually-hidden" type="file" accept="image/*" aria-label="Pilih foto ulang tahun">
+          </div>
+
+          <div class="surprise-note" id="surpriseNote" hidden>
+            <span class="note-stamp" aria-hidden="true">♥</span>
+            <div>
+              <p class="note-label">SEDIKIT PESAN UNTUKMU</p>
+              <p id="surpriseMessage" class="note-message">Semoga kamu selalu dikelilingi orang-orang yang menyayangimu, diberi keberanian untuk mengejar mimpi, dan punya banyak alasan untuk tersenyum. Kamu pantas mendapatkan hal-hal yang indah. ♡</p>
+              <p class="note-signature">Dengan sayang, <span id="senderName">seseorang yang peduli padamu</span></p>
+            </div>
+          </div>
+
+          <div class="wish-divider"><span></span><span class="divider-heart" aria-hidden="true">♥</span><span></span></div>
+          <div class="wish-list" aria-label="Harapan untukmu">
+            <div class="wish-item"><span class="wish-icon wish-icon-sun" aria-hidden="true">☼</span><span><strong>Banyak bahagia</strong><small>di hari-harimu</small></span></div>
+            <div class="wish-item"><span class="wish-icon wish-icon-flower" aria-hidden="true">✿</span><span><strong>Mimpi tercapai</strong><small>satu per satu</small></span></div>
+            <div class="wish-item"><span class="wish-icon wish-icon-heart" aria-hidden="true">♥</span><span><strong>Selalu disayang</strong><small>hari ini & seterusnya</small></span></div>
+          </div>
+        </div>
+
+        <div class="visual-column" aria-label="Foto dan dekorasi ulang tahun">
+          <div class="visual-backdrop backdrop-pink" aria-hidden="true"></div>
+          <div class="visual-backdrop backdrop-yellow" aria-hidden="true"></div>
+          <span class="floating-doodle doodle-star" aria-hidden="true">✧</span>
+          <span class="floating-doodle doodle-heart" aria-hidden="true">♥</span>
+          <span class="floating-doodle doodle-sparkle" aria-hidden="true">✦</span>
+
+          <div class="photo-frame" id="photoFrame">
+            <div class="photo-topline"><span class="photo-dot"></span><span class="photo-label">A LITTLE MEMORY</span><span class="photo-dot"></span></div>
+            <div class="photo-window" id="photoWindow">
+              <div class="photo-placeholder" id="photoPlaceholder">
+                <div class="placeholder-sun" aria-hidden="true"></div>
+                <svg class="placeholder-art" viewBox="0 0 320 310" role="img" aria-label="Ilustrasi kue ulang tahun dengan balon">
+                  <ellipse cx="160" cy="276" rx="102" ry="12" fill="#E9CFC4"/>
+                  <path d="M62 224 C62 211 87 201 160 201 C233 201 258 211 258 224 L258 252 C258 267 222 278 160 278 C98 278 62 267 62 252 Z" fill="#F49E9B"/>
+                  <ellipse cx="160" cy="224" rx="98" ry="22" fill="#FFD9D4"/>
+                  <path d="M64 231 C77 223 89 241 102 232 S126 222 140 232 S164 242 178 232 S204 223 218 232 S244 239 256 230" fill="none" stroke="#FFF6EF" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M91 174 C91 164 111 156 160 156 C209 156 229 164 229 174 L229 218 C229 230 199 239 160 239 C121 239 91 230 91 218 Z" fill="#F7C96B"/>
+                  <ellipse cx="160" cy="174" rx="69" ry="18" fill="#FFF0C9"/>
+                  <path d="M94 178 C105 170 114 190 126 180 S148 172 160 181 S183 190 195 180 S216 187 226 178" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                  <rect x="119" y="120" width="10" height="40" rx="4" fill="#A8C9B5"/>
+                  <rect x="155" y="111" width="10" height="49" rx="4" fill="#C6B2DC"/>
+                  <rect x="191" y="120" width="10" height="40" rx="4" fill="#A8C9B5"/>
+                  <path d="M124 115 C111 105 125 94 124 87 C137 98 140 106 124 115Z" fill="#F28E7E"/>
+                  <path d="M160 106 C147 96 161 83 160 76 C174 88 177 98 160 106Z" fill="#F28E7E"/>
+                  <path d="M196 115 C183 105 197 94 196 87 C209 98 212 106 196 115Z" fill="#F28E7E"/>
+                  <path d="M49 112 C25 91 36 55 62 52 C82 50 94 71 85 91 C79 103 65 110 49 112Z" fill="#EFA2AC"/>
+                  <path d="M61 112 Q76 130 82 142" fill="none" stroke="#B77D88" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M266 89 C244 68 255 34 280 32 C300 30 311 51 302 70 C296 82 282 88 266 89Z" fill="#9FCDB8"/>
+                  <path d="M277 89 Q291 109 290 123" fill="none" stroke="#739F8A" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M105 62 l5 12 13 1 -10 8 3 12 -11 -7 -11 7 3 -12 -10 -8 13 -1Z" fill="#F5C86B"/>
+                  <path d="M222 47 l4 9 10 1 -8 6 2 9 -8 -5 -8 5 2 -9 -8 -6 10 -1Z" fill="#C7B1DC"/>
+                  <circle cx="96" cy="136" r="4" fill="#A7CDB8"/><circle cx="231" cy="112" r="4" fill="#EFA2AC"/><circle cx="239" cy="146" r="3" fill="#F5C86B"/>
+                  <path d="M138 199 q4 -6 8 0 M174 199 q4 -6 8 0" stroke="#805C56" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+                  <path d="M153 207 q7 7 14 0" stroke="#C76E72" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="placeholder-caption">a little wish for you ♡</span>
+              </div>
+              <img id="uploadedPhoto" class="uploaded-photo" alt="Foto kenangan ulang tahun" hidden>
+            </div>
+            <div class="photo-caption"><span class="caption-heart" aria-hidden="true">♥</span><span id="photoCaption">hari indah, kenangan manis</span><span class="caption-sparkle" aria-hidden="true">✧</span></div>
+          </div>
+
+          <div class="birthday-sticker sticker-cake" aria-hidden="true"><span>🎂</span><small>make a wish!</small></div>
+          <div class="birthday-sticker sticker-confetti" aria-hidden="true"><span>✳</span><small>your day</small></div>
+          <div class="mini-garland" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section class="footer-note" aria-label="Catatan ulang tahun">
+        <span class="footer-flower" aria-hidden="true">✿</span>
+        <p>Semoga tahun barumu dipenuhi hal-hal kecil yang membuat hati terasa besar.</p>
+        <span class="footer-flower" aria-hidden="true">✿</span>
+      </section>
+      <p class="tiny-credit">MADE FOR YOUR SPECIAL DAY <span aria-hidden="true">♡</span></p>
+    </main>
+  </div>
+
+  <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+  <div id="statusMessage" class="visually-hidden" role="status" aria-live="polite"></div>
+</body>
+</html>
